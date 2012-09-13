@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Domain Portfolio Manager</title>
+<link rel="stylesheet" href="./images/style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var Tabs = {
+		Overview  : "pages/overview.html",
+		Readme    : "pages/readme.html",
+		License   : "pages/license.html",
+		Changelog : "pages/changelog.html",
+		Credits   : "pages/credits.html",
+		Features  : "pages/features.html",
+		Todo      : "pages/todo.html"
+	};
+
+	$.each(Tabs, function(i,j) {
+		var tmp = $('<li><a href="#" class="tab blue">' + i + ' <span class="left" /><span class="right" /></a></li>');
+		tmp.find("a").data("page", j);
+
+		$("ul.tabContainer").append(tmp);
+	});
+
+	var the_tabs = $(".tab");
+
+	the_tabs.click(function(e) {
+		var element = $(this);
+
+		if (element.find("#overLine").length)
+		{
+			return false;
+		}
+
+		var bg = element.attr("class").replace("tab ", "");
+
+		$("#overLine").remove();
+		$("<div>", {
+			id  : "overLine",
+			css : {
+				display    : "none",
+				width      : element.outerWidth()-2,
+				background : "#0873BE" || "white"
+			}
+		}).appendTo(element).fadeIn("slow");
+
+		$("#contentHolder").html('<img src="images/ajax_preloader.gif" width="64" height="64" class="preloader" />');
+		$("#contentHolder").load(element.data("page"));
+
+		e.preventDefault();
+	});
+
+	the_tabs.eq(0).click();
+});
+
+var myCurrentAge = Math.floor(((new Date().getTime() / 1000) - 554529600) / 31536000);
+var currentYear = (new Date).getFullYear();
+</script>
+</head>
+
+<body>
+
+<h1>Domain Portfolio Manager</h1>
+<h2>Version: 1.0.1</h2>
+
+<div id="main">
+	<ul class="tabContainer">
+		<!-- The jQuery generated tabs go here -->
+	</ul>
+	<div class="clear"></div>
+	<div id="tabContent">
+		<div id="contentHolder">
+			<!-- The AJAX fetched content goes here -->
+		</div>
+	</div>
+</div>
+
+<p class="copyright">
+	Copyright &copy; 2010 - <script>document.write(currentYear);</script> Eric Sizemore, All rights reserved.
+</p>
+
+</body>
+</html>

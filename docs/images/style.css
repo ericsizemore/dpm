@@ -1,0 +1,34 @@
+body,h1,h2,h3,p,quote,small,form,input,ul,li,ol,label{margin:0;padding:0}
+body{color:#e6e6e6;font-size:.825em;background-color:#D9D9D9;font-family:Arial,Helvetica,sans-serif}
+.tabContainer{float:right;padding-right:13px}
+#contentHolder{background-color:#eee;border:2px solid #fff;min-height: 600px; max-height: 650px; overflow: auto;margin:20px;color:#444;padding:15px}
+#tabContent{background-color:#D4D4D4;border:1px solid #444;margin-top:-15px;width:100%}
+#tabContent,.tabContainer li a,#contentHolder{-webkit-box-shadow:0 0 2px black;-moz-box-shadow:0 0 2px black;box-shadow:0 0 2px black}
+.tabContainer li{display:inline}
+.tabContainer li a,.tabContainer li a:visited{float:left;font-size:18px;display:block;padding:7px 16px 1px;margin:4px 5px;height:29px;position:relative;text-shadow:1px 1px 1px #ccc}
+#overLine{position:absolute;height:1px;background-color:white;width:90px;float:left;left:1px;top:-5px;overflow:hidden}
+#main{margin:0 auto;position:relative;width:1000px}
+ul .left{height:37px;left:0;position:absolute;top:0;width:10px}
+ul .right{height:37px;right:0;position:absolute;top:0;width:10px}
+ul a.blue{background:url(blue_mid.png) repeat-x top center;color:#fff}
+ul a.blue span.left{background:url(blue_left.png) no-repeat left top}
+ul a.blue span.right{background:url(blue_right.png) no-repeat right top}
+ul a:hover{background-position:bottom center;text-decoration:none}
+ul a:hover span.left{background-position:left bottom}
+ul a:hover span.right{background-position:right bottom}
+.preloader{display:block;margin:120px auto}
+.clear{clear:both;height:1px;overflow:hidden}
+h1{background:#0873BE;border-bottom:1px solid #2A95E1;font-size:1.5em;font-weight:normal;margin-bottom:15px;padding:15px;text-align:center}
+h2{font-size:.9em;font-weight:normal;padding-right:40px;position:relative;right:0;text-align:right;text-transform:uppercase;top:-48px}
+a,a:visited{color:#0196e3;text-decoration:none;outline:none}
+a:hover{text-decoration:underline}
+p.copyright{padding:10px 0;text-align:center;position:fixed;bottom:0;background:#0873BE;border-top:1px solid #2A95E1;width:100%}
+h1,h2,p.copyright{font-family:"Myriad Pro",Arial,Helvetica,sans-serif}
+#overview-details td.bold{font-weight:700}
+#hor-minimalistb{font-size: 11px;border-collapse: collapse;text-align: left;}
+#hor-minimalistb th{font-size: 12px;font-weight: normal;color: #039;padding: 10px 8px;border-bottom: 2px solid #6678b1;}
+#hor-minimalistb td{color: #669;padding: 9px 8px 9px 8px;border-bottom: 1px dashed #6678b1;}
+.list {margin:0;padding: 0;}
+.list li{margin-left: 25px;}
+.list li ul li{margin-left: 35px;}
+pre {font-size: 1.2em;}

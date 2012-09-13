@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /docs/
+Disallow: /includes/
+Disallow: /install/
+Disallow: /templates/
+Disallow: contact.php
+Disallow: paypal.php
+Disallow: search.php
+Disallow: reademe.txt

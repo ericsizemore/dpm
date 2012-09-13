@@ -1,0 +1,103 @@
+<p>
+	Thank you for downloading Domain Portfolio Manager! :) Use the following guide to help you install it.
+</p>
+<p>
+	Make sure you read everything before you begin uploading files. That includes the license.
+</p>
+<br />
+<h3>1.) Requirements</h3>
+<ul class="list">
+	<li>PHP 5.2.x or newer (5.2.17+ recommended)</li>
+	<li>MySQL 4.1.x or newer (5.1.57+ recommended)</li>
+</ul>
+<br />
+<h3>2.) Installing/Upgrading</h3>
+<p>
+	The following gives important information that you should read before any installation or upgrade. 
+	After INSTALLING or UPGRADING be sure to delete the ./install/ folder.<br /><br />
+	<span style="color: #ff0000; font-weight: bold;">** ALWAYS DO A BACKUP BEFORE ATTEMPTING AN UPGRADE - BACKUP YOUR DATABASE AND FILES **</span>
+</p>
+<ul class="list">
+	<li>Note what you have for your db details in ./includes/config.class.php</li>
+	<li>Backup your templates, and any modified files.</li>
+	<li>Upload and overwrite all files.</li>
+	<li>Re-enter your database details in ./includes/config.class.php</li>
+	<li>Compare your modified templates/files to the new version, changing them as needed.</li>
+</ul>
+<br />
+<ul class="list">
+	<li>TO UPGRADE TO 1.0.x
+		<ul>
+			<li>Not needed yet :)</li>
+		</ul>
+	</li>
+</ul>
+<br />
+<p>
+	Please also remember, when uploading files to:
+	<ul class="list">
+		<li>Upload all .php, .tpl, and .txt files in ASCII mode.</li>
+		<li>Upload all images in BINARY mode.</li>
+	</ul>
+</p>
+<br />
+<p>
+	<b>NEW INSTALL</b>
+</p>
+<br />
+<ul class="list">
+	<li>Create a MySQL database.
+	<li>Open ./includes/config.class.php and edit each of the following:
+		<ul>
+			<li>dbhost</li>
+			<li>dbuser</li>
+			<li>dbpass</li>
+			<li>dbname</li>
+		</ul>
+	</li>
+	<li>You may also want to update the following in ./includes/config.class.php
+		<ul>
+			<li>dbemail</li>
+			<li>timezone</li>
+		</ul>
+	</li>
+	<li>Upload all files and folders to your server, however, do not upload the /docs/ directory.</li>
+	<li>CHMOD the ./admin/backups/ directory to 0777.</li>
+	<li>Go to: http://www.example.com/path/to/install/ and install the script.</li>
+	<li>Once finished, be sure to delete the /install/ directory.</li>
+	<li>Also delete the /docs/ directory if you uploaded it.</li>
+</ul>
+<br />
+<p>
+	<b>UPGRADING</b>
+</p>
+<br />
+<ul class="list">
+	<li>Please above in the TO UPGRADE FROM.</li>
+</ul>
+<br />
+<h3>3.) Usage</h3>
+<ul class="list">
+	<li>Go to http://www.example.com/path/to/admin/</li>
+	<li>Enter the username and password you gave during the installation.</li>
+	<li>Then proceed to http://www.example.com/path/to/admin/site_config.php</li>
+	<li>After that.. proceed in adding domains :-)</li>
+</ul>
+<br />
+<h3>4.) Warning</h3>
+<p style="font-weight: bold; color: #ff0000;">
+	DO NOT EDIT ANYTHING UNLESS WHERE TOLD, OR UNLESS YOU KNOW WHAT YOU ARE DOING. IF YOU DO SO IT MAY RESULT IN THE SCRIPT NOT WORKING.
+</p>
+<br />
+<h3>5.) Help/Bugs</h3>
+<ul class="list">
+	<li>You can submit bug reports at http://domain-portfolio.secondversion.com/forums/</li>
+	<li>You can make a feature request on our support forum, http://domain-portfolio.secondversion.com/forums/</li>
+	<li>If you like this project and would like to help out; feel free to send a PayPal donation :).
+	<ul>
+		<li>By no means are you required to do so, but it is appreciated.</li>
+		<li>I'd like to thank those who have donated already.</li>
+		<li>Paypal email address is: paypal@secondversion.com</li>
+	</ul>
+</ul>
+<br />
